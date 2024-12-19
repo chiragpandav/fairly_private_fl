@@ -190,10 +190,10 @@ def main(args):
     # ------------ PARAMETERS ------------ #
 
     architecture_layout = [100, 100, 2]  # network architecture (fully connected)
-    max_client_dataset_size = 32
+    max_client_dataset_size = 2000
     local_epochs =[5] #[1, 5, 10] 
     # IMO: good batch to reconstruct the data-: max/local = should be smaller  (512/64)(128/16)
-    local_batch_sizes = [8] #[32, 16, 8]
+    local_batch_sizes = [250] #[32, 16, 8]
     epoch_prior_params =[0.01] #[0.0, 0.5, 0.1, 0.05, 0.01, 0.005, 0.001]
     tol = 0.319
 

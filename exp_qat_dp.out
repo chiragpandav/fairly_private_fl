@@ -1,0 +1,193 @@
+State Code::  AK
+training sample:: AK.data and len is 2000
+testing sample:: AK.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+DP called
+n_batches is 8
+local_epoch is  5
+Noise scale is  0.1
+Noise Scale: 0.1    Sample: 1    Epoch: 1    Acc: 49.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7373737373737373 0.005051854282918602
+Noise Scale: 0.1    Sample: 1    Epoch: 2    Acc: 49.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7474747474747475 0.005011054301502729
+Noise Scale: 0.1    Sample: 1    Epoch: 3    Acc: 49.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7474747474747475 0.004950238598717583
+Noise Scale: 0.1    Sample: 1    Epoch: 4    Acc: 49.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7474747474747475 0.004936888061388574
+Noise Scale: 0.1    Sample: 1    Epoch: 5    Acc: 49.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7474747474747475 0.004899457548603867
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 18s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 52.8% +- 0.00
+250random_baseline (50.8, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  AZ
+training sample:: AZ.data and len is 2000
+testing sample:: AZ.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+DP called
+n_batches is 8
+local_epoch is  5
+Noise scale is  0.1
+Noise Scale: 0.1    Sample: 1    Epoch: 1    Acc: 38.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7373737373737373 0.005226262892135466
+Noise Scale: 0.1    Sample: 1    Epoch: 2    Acc: 38.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7474747474747475 0.005079804646848428
+Noise Scale: 0.1    Sample: 1    Epoch: 3    Acc: 38.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7777777777777778 0.004962083667215675
+Noise Scale: 0.1    Sample: 1    Epoch: 4    Acc: 38.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.797979797979798 0.004858929400492196
+Noise Scale: 0.1    Sample: 1    Epoch: 5    Acc: 38.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.8282828282828283 0.004764867852432559
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 19s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 61.5% +- 0.00
+250random_baseline (51.0, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  AR
+training sample:: AR.data and len is 2000
+testing sample:: AR.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+DP called
+n_batches is 8
+local_epoch is  5
+Noise scale is  0.1
+Noise Scale: 0.1    Sample: 1    Epoch: 1    Acc: 32.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7171717171717171 0.005332370599110921
+Noise Scale: 0.1    Sample: 1    Epoch: 2    Acc: 32.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7474747474747475 0.0050532257918155556
+Noise Scale: 0.1    Sample: 1    Epoch: 3    Acc: 32.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7474747474747475 0.004817836212389397
+Noise Scale: 0.1    Sample: 1    Epoch: 4    Acc: 32.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7575757575757576 0.004687887851638023
+Noise Scale: 0.1    Sample: 1    Epoch: 5    Acc: 32.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7474747474747475 0.004565173327320754
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 0s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 61.4% +- 0.00
+250random_baseline (52.4, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  CA
+training sample:: CA.data and len is 2000
+testing sample:: CA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+DP called
+n_batches is 8
+local_epoch is  5
+Noise scale is  0.1
+Noise Scale: 0.1    Sample: 1    Epoch: 1    Acc: 48.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7878787878787878 0.004804452862402405
+Noise Scale: 0.1    Sample: 1    Epoch: 2    Acc: 48.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.797979797979798 0.004784330274119522
+Noise Scale: 0.1    Sample: 1    Epoch: 3    Acc: 48.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.797979797979798 0.004767045228168218
+Noise Scale: 0.1    Sample: 1    Epoch: 4    Acc: 48.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.797979797979798 0.004750171394059153
+Noise Scale: 0.1    Sample: 1    Epoch: 5    Acc: 48.5%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.8080808080808081 0.004731958261643997
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 8m 55s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 55.3% +- 0.00
+250random_baseline (52.4, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  ID
+training sample:: ID.data and len is 2000
+testing sample:: ID.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+DP called
+n_batches is 8
+local_epoch is  5
+Noise scale is  0.1
+Noise Scale: 0.1    Sample: 1    Epoch: 1    Acc: 23.2%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7070707070707071 0.005126192714228775
+Noise Scale: 0.1    Sample: 1    Epoch: 2    Acc: 23.2%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7070707070707071 0.004864453366308501
+Noise Scale: 0.1    Sample: 1    Epoch: 3    Acc: 23.2%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7373737373737373 0.004659898955412585
+Noise Scale: 0.1    Sample: 1    Epoch: 4    Acc: 23.2%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7575757575757576 0.004493676050744876
+Noise Scale: 0.1    Sample: 1    Epoch: 5    Acc: 23.2%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7575757575757576 0.0043788374674440635
+Quantized Model Size: 30.5537109375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 59s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 63.0% +- 0.00
+250random_baseline (50.7, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  NH
+training sample:: NH.data and len is 2000
+testing sample:: NH.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+DP called
+n_batches is 8
+local_epoch is  5
+Noise scale is  0.1
+Noise Scale: 0.1    Sample: 1    Epoch: 1    Acc: 34.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.6868686868686869 0.004968228966298729
+Noise Scale: 0.1    Sample: 1    Epoch: 2    Acc: 34.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.696969696969697 0.0048560476062273735
+Noise Scale: 0.1    Sample: 1    Epoch: 3    Acc: 34.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7070707070707071 0.004753752188249068
+Noise Scale: 0.1    Sample: 1    Epoch: 4    Acc: 34.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.6868686868686869 0.0046876879653545344
+Noise Scale: 0.1    Sample: 1    Epoch: 5    Acc: 34.3%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.696969696969697 0.004605346255832248
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 44s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 61.5% +- 0.00
+250random_baseline (50.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  NM
+training sample:: NM.data and len is 2000
+testing sample:: NM.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+DP called
+n_batches is 8
+local_epoch is  5
+Noise scale is  0.1
+Noise Scale: 0.1    Sample: 1    Epoch: 1    Acc: 36.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7272727272727273 0.005343236104406492
+Noise Scale: 0.1    Sample: 1    Epoch: 2    Acc: 36.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7272727272727273 0.005183056749478735
+Noise Scale: 0.1    Sample: 1    Epoch: 3    Acc: 36.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7373737373737373 0.005024914789681483
+Noise Scale: 0.1    Sample: 1    Epoch: 4    Acc: 36.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7777777777777778 0.0049433903862731625
+Noise Scale: 0.1    Sample: 1    Epoch: 5    Acc: 36.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7575757575757576 0.004851313853504682
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 24s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 66.7% +- 0.00
+250random_baseline (51.8, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  NY
+training sample:: NY.data and len is 2000
+testing sample:: NY.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+DP called
+n_batches is 8
+local_epoch is  5
+Noise scale is  0.1
+Noise Scale: 0.1    Sample: 1    Epoch: 1    Acc: 44.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7676767676767676 0.004968403565763223
+Noise Scale: 0.1    Sample: 1    Epoch: 2    Acc: 44.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7676767676767676 0.004921624154755564
+Noise Scale: 0.1    Sample: 1    Epoch: 3    Acc: 44.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7575757575757576 0.004858181332096909
+Noise Scale: 0.1    Sample: 1    Epoch: 4    Acc: 44.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7575757575757576 0.0048005854842638725
+Noise Scale: 0.1    Sample: 1    Epoch: 5    Acc: 44.4%    Bac: 50.0%    0%: ??h ??m ??s          val_accuracy and val_epoch_loss:  0.7676767676767676 0.004791148082174436
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 14s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 53.9% +- 0.00
+250random_baseline (52.0, 0.0)
+Complete                           
+==================================================================
+==================================================================
+Inversion

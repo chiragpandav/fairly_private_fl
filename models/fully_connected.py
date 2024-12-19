@@ -3,51 +3,110 @@ import torch
 import numpy as np
 from utils.eval_metrics import get_acc_and_bac
 
+
+
 class LinReLU(nn.Module):
     """
     A linear layer followed by a ReLU activation layer.
     """
-
     def __init__(self, in_size, out_size):
         super(LinReLU, self).__init__()
-
-        linear = nn.Linear(in_size, out_size)
-        ReLU = nn.ReLU()
-        # self.Dropout = nn.Dropout(0.25)
-        self.layers = nn.Sequential(linear, ReLU)
+        self.linear = nn.Linear(in_size, out_size)
+        self.relu = nn.ReLU()
+        self.layers = nn.Sequential(self.linear, self.relu)
 
     def reset_parameters(self):
-        self.layers[0].reset_parameters()
+        self.linear.reset_parameters()
         return self
 
     def forward(self, x):
         x = self.layers(x)
         return x
 
-
 class FullyConnected(nn.Module):
     """
-    A simple fully connected neural network with ReLU activations.
+    A fully connected neural network with ReLU activations and QAT support.
     """
-
     def __init__(self, input_size, layout):
-
         super(FullyConnected, self).__init__()
-        layers = [nn.Flatten()]  # does not play any role, but makes the code neater
+        self.quant = torch.quantization.QuantStub()
+        layers = [nn.Flatten()]
         prev_fc_size = input_size
         for i, fc_size in enumerate(layout):
             if i + 1 < len(layout):
                 layers += [LinReLU(prev_fc_size, fc_size)]
             else:
                 layers += [nn.Linear(prev_fc_size, 1), nn.Sigmoid()]
-                # layers += [nn.Linear(prev_fc_size, fc_size)]
             prev_fc_size = fc_size
         self.layers = nn.Sequential(*layers)
+            
+        self.dequant = torch.quantization.DeQuantStub()        
+        
+        # self.qconfig = None
 
     def forward(self, x):
+        x = self.quant(x)
         x = self.layers(x)
+        x = self.dequant(x)
         return x
 
+    def fuse_model(self):
+        """
+        Fuses Linear and ReLU layers in LinReLU modules for QAT
+        """
+        for module in self.modules():
+            if isinstance(module, LinReLU):
+                torch.quantization.fuse_modules(
+                    module.layers, 
+                    ['0', '1'],  # Fuse Linear and ReLU
+                    inplace=True
+                )
+
+
+# class LinReLU(nn.Module):
+#     """
+#     A linear layer followed by a ReLU activation layer.
+#     """
+
+#     def __init__(self, in_size, out_size):
+#         super(LinReLU, self).__init__()
+
+#         linear = nn.Linear(in_size, out_size)
+#         ReLU = nn.ReLU()
+#         # self.Dropout = nn.Dropout(0.25)
+#         self.layers = nn.Sequential(linear, ReLU)
+
+#     def reset_parameters(self):
+#         self.layers[0].reset_parameters()
+#         return self
+
+#     def forward(self, x):
+#         x = self.layers(x)
+#         return x
+
+
+# class FullyConnected(nn.Module):
+#     """
+#     A simple fully connected neural network with ReLU activations.
+#     """
+
+#     def __init__(self, input_size, layout):
+
+#         super(FullyConnected, self).__init__()
+#         layers = [nn.Flatten()]  # does not play any role, but makes the code neater
+#         prev_fc_size = input_size
+#         for i, fc_size in enumerate(layout):
+#             if i + 1 < len(layout):
+#                 layers += [LinReLU(prev_fc_size, fc_size)]
+#             else:
+#                 layers += [nn.Linear(prev_fc_size, 1), nn.Sigmoid()]
+#                 # layers += [nn.Linear(prev_fc_size, fc_size)]
+#             prev_fc_size = fc_size
+#         self.layers = nn.Sequential(*layers)
+
+#     def forward(self, x):
+#         x = self.layers(x)
+#         return x
 
 class FullyConnectedTrainer:
     """

@@ -1,0 +1,185 @@
+State Code::  AK
+training sample:: AK.data and len is 2000
+testing sample:: AK.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005025058081655791
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.00498919083614542
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004949512204738578
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.0049321856161560675
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004913890301579177
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 18s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 55.3% +- 0.00
+250random_baseline (51.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  AZ
+training sample:: AZ.data and len is 2000
+testing sample:: AZ.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005189356779811358
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.005045842642735953
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004925701654318607
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.0048511380499059505
+val_accuracy and val_epoch_loss:  0.8383838383838383 0.004745519522464637
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 6s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 63.4% +- 0.00
+250random_baseline (50.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  AR
+training sample:: AR.data and len is 2000
+testing sample:: AR.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005319586305907278
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005077092936544707
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.0048842493331793585
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004731940801697548
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004603458775414361
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 9m 20s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 51.0% +- 0.00
+250random_baseline (51.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  CA
+training sample:: CA.data and len is 2000
+testing sample:: CA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004801456073317865
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.0047860630232878405
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004770541130894363
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004743890027807216
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.004750438410826403
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 8m 51s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 65.1% +- 0.00
+250random_baseline (52.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  ID
+training sample:: ID.data and len is 2000
+testing sample:: ID.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.0051506920294328165
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.0048662484294236304
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.004691917185831552
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.0044958498140778205
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004392943900040906
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 8m 51s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 60.2% +- 0.00
+250random_baseline (50.4, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  NH
+training sample:: NH.data and len is 2000
+testing sample:: NH.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.004963724902181914
+val_accuracy and val_epoch_loss:  0.696969696969697 0.004851947830180929
+val_accuracy and val_epoch_loss:  0.696969696969697 0.004738545176958797
+val_accuracy and val_epoch_loss:  0.696969696969697 0.004675433190182002
+val_accuracy and val_epoch_loss:  0.696969696969697 0.00461577797176862
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 8m 53s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.4% +- 0.00
+250random_baseline (49.7, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  NM
+training sample:: NM.data and len is 2000
+testing sample:: NM.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.005320922894911332
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.005151713135266545
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.0050410616277444245
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004925560770612775
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004858143401868416
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 8m 48s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 62.9% +- 0.00
+250random_baseline (51.6, 0.0)
+Complete                           
+==================================================================
+==================================================================
+State Code::  NY
+training sample:: NY.data and len is 2000
+testing sample:: NY.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004988698044208565
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004915183541750667
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.0048442690661459255
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004822115705470846
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004756215244832665
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 8m 51s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 56.9% +- 0.00
+250random_baseline (50.8, 0.0)
+Complete                           
+==================================================================
+==================================================================
+Inversion
