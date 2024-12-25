@@ -190,10 +190,10 @@ def main(args):
     # ------------ PARAMETERS ------------ #
 
     architecture_layout = [100, 100, 2]  # network architecture (fully connected)
-    max_client_dataset_size = 32
+    max_client_dataset_size = 2000
     local_epochs =[5] #[1, 5, 10] 
     # IMO: good batch to reconstruct the data-: max/local = should be smaller  (512/64)(128/16)
-    local_batch_sizes = [8] #[32, 16, 8]
+    local_batch_sizes = [250] #[32, 16, 8]
     epoch_prior_params =[0.01] #[0.0, 0.5, 0.1, 0.05, 0.01, 0.005, 0.001]
     tol = 0.319
 
@@ -209,12 +209,10 @@ def main(args):
 
     dataset.standardize()
     tolerance_map = dataset.create_tolerance_map(tol=tol)
-    
 
     # set the random seed
     np.random.seed(args.random_seed)
     torch.manual_seed(args.random_seed)
-
 
     # ------------ INVERSION EXPERIMENT ------------ #
     base_path = f'experiment_data/fedavg_experiments/{args.dataset}/experiment_{args.experiment}'

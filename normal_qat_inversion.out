@@ -1,0 +1,1301 @@
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  AL
+training sample:: AL.data and len is 2000
+testing sample:: AL.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7171717171717171 0.005480799410078261
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005184702800981926
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.004970681787741305
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004805378239564222
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004673138712391708
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 48s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 56.2% +- 0.00
+250random_baseline (50.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  AK
+training sample:: AK.data and len is 2000
+testing sample:: AK.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005025058081655791
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.00498919083614542
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004949512204738578
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.0049321856161560675
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004913890301579177
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 43s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 53.8% +- 0.00
+250random_baseline (51.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  AZ
+training sample:: AZ.data and len is 2000
+testing sample:: AZ.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005189356779811358
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.005045842642735953
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004925701654318607
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.0048511380499059505
+val_accuracy and val_epoch_loss:  0.8383838383838383 0.004745519522464637
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 56s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 62.5% +- 0.00
+250random_baseline (50.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  AR
+training sample:: AR.data and len is 2000
+testing sample:: AR.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005319586305907278
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005077092936544707
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.0048842493331793585
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004731940801697548
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004603458775414361
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 42s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 57.8% +- 0.00
+250random_baseline (51.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  CA
+training sample:: CA.data and len is 2000
+testing sample:: CA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004801456073317865
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.0047860630232878405
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004770541130894363
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004743890027807216
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.004750438410826403
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 51s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 66.0% +- 0.00
+250random_baseline (52.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  CO
+training sample:: CO.data and len is 2000
+testing sample:: CO.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004686850791025644
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004619661304685805
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.004568199015627003
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.0045191660673931395
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004485110441843669
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 51s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.2% +- 0.00
+250random_baseline (49.9, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  CT
+training sample:: CT.data and len is 2000
+testing sample:: CT.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004896782263360842
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004863487650649716
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004832417675943086
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004821705998796405
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.00480307141939799
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 0s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.5% +- 0.00
+250random_baseline (51.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  DE
+training sample:: DE.data and len is 2000
+testing sample:: DE.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.696969696969697 0.0055185538349729595
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005408262965655086
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.005302921690122046
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005231021630643594
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005167541479823565
+Quantized Model Size: 30.5478515625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 36s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 60.0% +- 0.00
+250random_baseline (51.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  FL
+training sample:: FL.data and len is 2000
+testing sample:: FL.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6262626262626263 0.006108669319538155
+val_accuracy and val_epoch_loss:  0.6363636363636364 0.005928644628235788
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005764678271129878
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.005658001610727021
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.005534801820311883
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 44s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 64.2% +- 0.00
+250random_baseline (53.4, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  GA
+training sample:: GA.data and len is 2000
+testing sample:: GA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004839295088642776
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004708666693080555
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004593098705465143
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004500764487969755
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004416703274755767
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 0s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.3% +- 0.00
+250random_baseline (51.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  HI
+training sample:: HI.data and len is 2000
+testing sample:: HI.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005224863086083923
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.005127730995717675
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.005074530538886485
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.005008689682893079
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.004970135712864423
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 45s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 51.5% +- 0.00
+250random_baseline (50.7, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  ID
+training sample:: ID.data and len is 2000
+testing sample:: ID.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.0051506920294328165
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.0048662484294236304
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.004691917185831552
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.0044958498140778205
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004392943900040906
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 50s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.8% +- 0.00
+250random_baseline (50.4, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  IL
+training sample:: IL.data and len is 2000
+testing sample:: IL.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004360596338907878
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004314481911033091
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004277566767702199
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004237930582027242
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004216378084336868
+Quantized Model Size: 30.5908203125 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 50s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 65.6% +- 0.00
+250random_baseline (51.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  IN
+training sample:: IN.data and len is 2000
+testing sample:: IN.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.005842380451433586
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.005652433694011033
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.00543453898092713
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.005294823285305139
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005176110701127486
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 51s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 55.5% +- 0.00
+250random_baseline (49.4, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  IA
+training sample:: IA.data and len is 2000
+testing sample:: IA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.5959595959595959 0.0064335597885979545
+val_accuracy and val_epoch_loss:  0.6161616161616161 0.006060016275656344
+val_accuracy and val_epoch_loss:  0.6363636363636364 0.005828915822385538
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.005596335488136368
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.005419991835199221
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 51s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 60.3% +- 0.00
+250random_baseline (49.5, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  KS
+training sample:: KS.data and len is 2000
+testing sample:: KS.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005154944429493913
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.004877062759014091
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.004739371514079546
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004572017325295342
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.0044846140375041
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 42s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 60.5% +- 0.00
+250random_baseline (50.3, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  KY
+training sample:: KY.data and len is 2000
+testing sample:: KY.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004876323119558469
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.0046642907340117175
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004522450343526975
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004430987016119138
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004336611791090531
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 34s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 51.7% +- 0.00
+250random_baseline (49.9, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  LA
+training sample:: LA.data and len is 2000
+testing sample:: LA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.004910052424729473
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004741265015168624
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004620018330487338
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004523573499737364
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004459632466537784
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 51s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 62.2% +- 0.00
+250random_baseline (52.6, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  ME
+training sample:: ME.data and len is 2000
+testing sample:: ME.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6363636363636364 0.005361397459049418
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005091876092583242
+val_accuracy and val_epoch_loss:  0.696969696969697 0.004855083696769945
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.004680394223242095
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.004574045388385503
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 5s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.4% +- 0.00
+250random_baseline (50.4, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  MD
+training sample:: MD.data and len is 2000
+testing sample:: MD.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.8181818181818182 0.0040705791025450735
+val_accuracy and val_epoch_loss:  0.8181818181818182 0.004053813640517418
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.004025130560903838
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.004028316700097286
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004014042591807818
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 41s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 63.0% +- 0.00
+250random_baseline (52.4, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  MA
+training sample:: MA.data and len is 2000
+testing sample:: MA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.004719075229432847
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.0046856051141565495
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.0046661565400133225
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.00463502545549412
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.004621194468604194
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 48s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 62.2% +- 0.00
+250random_baseline (50.3, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  MI
+training sample:: MI.data and len is 2000
+testing sample:: MI.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6464646464646465 0.006089309249261413
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.005894916226165463
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.005722118146491774
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.005564150786159014
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.0054745174417592055
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 3s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 58.6% +- 0.00
+250random_baseline (49.5, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  MN
+training sample:: MN.data and len is 2000
+testing sample:: MN.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7171717171717171 0.005163133746445781
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.0050361008957178904
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.004963393765266495
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.004911336934927738
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.004879344292361327
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 52s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 58.2% +- 0.00
+250random_baseline (49.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  MS
+training sample:: MS.data and len is 2000
+testing sample:: MS.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6363636363636364 0.006261372807049992
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005893879466586643
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005587173230720289
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005374571891746136
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.005195869941904087
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 36s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 51.9% +- 0.00
+250random_baseline (51.6, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  MO
+training sample:: MO.data and len is 2000
+testing sample:: MO.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6060606060606061 0.006106926937295933
+val_accuracy and val_epoch_loss:  0.6161616161616161 0.005920539600680573
+val_accuracy and val_epoch_loss:  0.6262626262626263 0.005742861164940728
+val_accuracy and val_epoch_loss:  0.6161616161616161 0.005607022781564732
+val_accuracy and val_epoch_loss:  0.6262626262626263 0.005506573301373106
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 40s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 55.6% +- 0.00
+250random_baseline (49.7, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  MT
+training sample:: MT.data and len is 2000
+testing sample:: MT.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6363636363636364 0.006092455049957892
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.0058118664857113
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.005623870425754123
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.0054658862075420344
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005350854059662482
+Quantized Model Size: 30.5908203125 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 42s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 60.8% +- 0.00
+250random_baseline (50.3, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  NE
+training sample:: NE.data and len is 2000
+testing sample:: NE.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.006125291790625062
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.00585774520430902
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005623562167389224
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005444560990189061
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005302589349072389
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 49s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 61.3% +- 0.00
+250random_baseline (50.0, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  NV
+training sample:: NV.data and len is 2000
+testing sample:: NV.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.00517362416392625
+val_accuracy and val_epoch_loss:  0.7171717171717171 0.0050468050470255845
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.004984443837946112
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004894216253299906
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004840045264272979
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 56s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 63.1% +- 0.00
+250random_baseline (51.3, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  NH
+training sample:: NH.data and len is 2000
+testing sample:: NH.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.004963724902181914
+val_accuracy and val_epoch_loss:  0.696969696969697 0.004851947830180929
+val_accuracy and val_epoch_loss:  0.696969696969697 0.004738545176958797
+val_accuracy and val_epoch_loss:  0.696969696969697 0.004675433190182002
+val_accuracy and val_epoch_loss:  0.696969696969697 0.00461577797176862
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 59s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.8% +- 0.00
+250random_baseline (49.7, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  NJ
+training sample:: NJ.data and len is 2000
+testing sample:: NJ.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.00540432905909991
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.005386489810365619
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005380223495791657
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.0053678985797997675
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005382809374067519
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 54s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 62.3% +- 0.00
+250random_baseline (51.2, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  NM
+training sample:: NM.data and len is 2000
+testing sample:: NM.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.005320922894911332
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.005151713135266545
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.0050410616277444245
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004925560770612775
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004858143401868416
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 19s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 61.3% +- 0.00
+250random_baseline (51.6, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  NY
+training sample:: NY.data and len is 2000
+testing sample:: NY.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004988698044208565
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004915183541750667
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.0048442690661459255
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.004822115705470846
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004756215244832665
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 8s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 57.4% +- 0.00
+250random_baseline (50.8, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  NC
+training sample:: NC.data and len is 2000
+testing sample:: NC.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.00549467404683431
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.00524745083818532
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005032239839284107
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.004878471897105978
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.004763462928810505
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 50s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 57.9% +- 0.00
+250random_baseline (51.6, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  ND
+training sample:: ND.data and len is 2000
+testing sample:: ND.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005928744571377533
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.005786770521992385
+val_accuracy and val_epoch_loss:  0.6464646464646465 0.0056888503257674404
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.00560931424901943
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005568413421361133
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 49s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 56.8% +- 0.00
+250random_baseline (49.7, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  OH
+training sample:: OH.data and len is 2000
+testing sample:: OH.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005044025303137423
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004833595921294858
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004653899657605875
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.00453995695017805
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004447185932987869
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 39s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 58.5% +- 0.00
+250random_baseline (50.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  OK
+training sample:: OK.data and len is 2000
+testing sample:: OK.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.5959595959595959 0.006664266489972972
+val_accuracy and val_epoch_loss:  0.6262626262626263 0.006127221415741275
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005742602276079582
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.00550040030720258
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.005236670826420639
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 41s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 56.8% +- 0.00
+250random_baseline (50.0, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  OR
+training sample:: OR.data and len is 2000
+testing sample:: OR.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.0052477103291135845
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.005164445650697958
+val_accuracy and val_epoch_loss:  0.7171717171717171 0.005124707414646342
+val_accuracy and val_epoch_loss:  0.7171717171717171 0.005088936198841442
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.0050724594279973195
+Quantized Model Size: 30.5908203125 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 15s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 62.7% +- 0.00
+250random_baseline (50.3, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  PA
+training sample:: PA.data and len is 2000
+testing sample:: PA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6363636363636364 0.006391764289200908
+val_accuracy and val_epoch_loss:  0.6464646464646465 0.006099516695195978
+val_accuracy and val_epoch_loss:  0.6363636363636364 0.005851105608121313
+val_accuracy and val_epoch_loss:  0.6363636363636364 0.005653805202907986
+val_accuracy and val_epoch_loss:  0.6464646464646465 0.005510490952116071
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 58s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 56.9% +- 0.00
+250random_baseline (49.6, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  RI
+training sample:: RI.data and len is 2000
+testing sample:: RI.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.0039008657137552896
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.003897791559045965
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.003875074964581114
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.0038670638594964536
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.003856928962649721
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 5s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 64.1% +- 0.00
+250random_baseline (50.8, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  SC
+training sample:: SC.data and len is 2000
+testing sample:: SC.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005713725932920822
+val_accuracy and val_epoch_loss:  0.6464646464646465 0.005443140713855474
+val_accuracy and val_epoch_loss:  0.6565656565656566 0.005223034006176573
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.005067140767068574
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.004967091962544605
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 54s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 56.6% +- 0.00
+250random_baseline (51.5, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  SD
+training sample:: SD.data and len is 2000
+testing sample:: SD.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.5252525252525253 0.007426746565886218
+val_accuracy and val_epoch_loss:  0.5555555555555556 0.006843816150318493
+val_accuracy and val_epoch_loss:  0.5757575757575758 0.006447923303854586
+val_accuracy and val_epoch_loss:  0.5757575757575758 0.0061449553027297515
+val_accuracy and val_epoch_loss:  0.6060606060606061 0.005958976769688154
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 53s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 60.5% +- 0.00
+250random_baseline (49.6, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  TN
+training sample:: TN.data and len is 2000
+testing sample:: TN.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.0063337063548540825
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.005996901579577513
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.00575255203728724
+val_accuracy and val_epoch_loss:  0.696969696969697 0.005554703750995675
+val_accuracy and val_epoch_loss:  0.6868686868686869 0.005423642168141374
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 39s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 56.9% +- 0.00
+250random_baseline (50.5, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  TX
+training sample:: TX.data and len is 2000
+testing sample:: TX.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7575757575757576 0.005247191347257056
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005207613863126196
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.005166998415282278
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.0051589969432715215
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.0051777964890605275
+Quantized Model Size: 30.5908203125 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 49s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 62.8% +- 0.00
+250random_baseline (52.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  UT
+training sample:: UT.data and len is 2000
+testing sample:: UT.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.0049472129104113334
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.004712353150049846
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004486273936551027
+val_accuracy and val_epoch_loss:  0.8080808080808081 0.004296196530563663
+val_accuracy and val_epoch_loss:  0.8282828282828283 0.004130065441131592
+Quantized Model Size: 30.5634765625 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 54s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 63.0% +- 0.00
+250random_baseline (49.5, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  VT
+training sample:: VT.data and len is 2000
+testing sample:: VT.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.006084259712334835
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.0057749537506488835
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.0055830629184992625
+val_accuracy and val_epoch_loss:  0.6767676767676768 0.005410544800035881
+val_accuracy and val_epoch_loss:  0.696969696969697 0.005258425919696538
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 43s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.9% +- 0.00
+250random_baseline (50.3, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  VA
+training sample:: VA.data and len is 2000
+testing sample:: VA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004292189472853535
+val_accuracy and val_epoch_loss:  0.7777777777777778 0.004203869236840142
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004179492743328364
+val_accuracy and val_epoch_loss:  0.797979797979798 0.0041346784793969355
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004108218532620054
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 52s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 58.5% +- 0.00
+250random_baseline (51.7, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  WA
+training sample:: WA.data and len is 2000
+testing sample:: WA.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.7878787878787878 0.004362100603604558
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004326824286971429
+val_accuracy and val_epoch_loss:  0.797979797979798 0.004285270818556198
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004266863218461624
+val_accuracy and val_epoch_loss:  0.7676767676767676 0.004252879005489927
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 41s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 57.9% +- 0.00
+250random_baseline (50.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  WV
+training sample:: WV.data and len is 2000
+testing sample:: WV.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.696969696969697 0.006065060393978851
+val_accuracy and val_epoch_loss:  0.696969696969697 0.005808603281926627
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.005557296854076963
+val_accuracy and val_epoch_loss:  0.7171717171717171 0.005362640125582917
+val_accuracy and val_epoch_loss:  0.7171717171717171 0.005236451071922226
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 10m 42s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 59.3% +- 0.00
+250random_baseline (50.1, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  WI
+training sample:: WI.data and len is 2000
+testing sample:: WI.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.696969696969697 0.005113057415894788
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.004913399315843678
+val_accuracy and val_epoch_loss:  0.696969696969697 0.004759057603701196
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.004660413421765723
+val_accuracy and val_epoch_loss:  0.7373737373737373 0.0045629083508192895
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 2s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 61.4% +- 0.00
+250random_baseline (49.3, 0.0)
+Complete                           
+==================================================================
+==================================================================
+[W TensorImpl.h:848] Warning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (function operator())
+/root/anaconda3/envs/myenv_conda/lib/python3.8/site-packages/torch/quantization/observer.py:241: UserWarning: must run observer before calling calculate_qparams.                                        Returning default scale and zero point 
+  warnings.warn(
+State Code::  WY
+training sample:: WY.data and len is 2000
+testing sample:: WY.test and len is 99
+0%: ??h ??m ??s          
+Data use for training::  torch.Size([2000, 10])
+Pre train model is loaded
+Normal training
+n_batches is 8
+local_epoch is  5
+val_accuracy and val_epoch_loss:  0.6666666666666666 0.005471979728852859
+val_accuracy and val_epoch_loss:  0.7070707070707071 0.005345073011186387
+val_accuracy and val_epoch_loss:  0.7272727272727273 0.005296395884619819
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005198896533311016
+val_accuracy and val_epoch_loss:  0.7474747474747475 0.005136404374633172
+Quantized Model Size: 30.5693359375 KB
+parallelized--OFF 
+Completed. Time Elapsed: 0h 11m 1s
+reconstructions_and_ground_truths is dumped
+Performance at 5 Epochs and 250 Batch Size: 56.5% +- 0.00
+250random_baseline (49.9, 0.0)
+Complete                           
+==================================================================
+==================================================================
+Inversion

@@ -636,9 +636,9 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
 
     timer = Timer(n_global_epochs)
     
-    Normal_flag= False
+    Normal_flag= True
     
-    defense_flag= True
+    defense_flag= False
     noise_scale=0.1
 
     fairness_flag= False

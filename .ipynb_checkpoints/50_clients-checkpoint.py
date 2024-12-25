@@ -8,9 +8,12 @@ state_codes = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
                "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
                "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 
-# state_codes = ["AL","AK", "AZ","CA"]
-# state_codes = [ "CA","CO"]
-print("Inversion")
+
+# state_name = ["AK","AZ","AR","CA", "ID","NH","NM","NY"]
+
+# state_codes =["AK","AZ","AR","CA", "ID","NH","NM","NY"]
+state_codes =["CA"]
+
 count=0
 for state_code in state_codes:
     # if count==2:

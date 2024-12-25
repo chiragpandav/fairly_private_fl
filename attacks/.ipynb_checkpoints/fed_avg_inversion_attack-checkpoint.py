@@ -484,6 +484,55 @@ def intersectional_loss (input_data, labels, predicted_classes):
     return loss_intersectional_temp
 
 
+def prepare_qat_model(model, backend='qnnpack'):
+    """
+    Prepare model for Quantization Aware Training
+    """
+    model.qconfig = torch.quantization.get_default_qat_qconfig(backend)
+    torch.backends.quantized.engine = backend
+    model.fuse_model()
+    torch.quantization.prepare_qat(model, inplace=True)
+    return model
+
+def collect_quant_params(net, quantized_net):
+
+    processed_params = []
+
+    # Clone and detach the original parameters
+    original_params = [param.clone().detach() for param in net.parameters()]
+
+    for original_param in original_params:
+        matched = False 
+        for name, module in quantized_net.named_modules():
+            if hasattr(module, 'weight') and module.weight is not None:
+                weight = module.weight
+                weight_tensor = weight() if callable(weight) else weight
+
+                if isinstance(weight_tensor, torch.Tensor):
+                    # Dequantize if necessary and detach the tensor
+                    weight_tensor = weight_tensor.dequantize().detach() if weight_tensor.is_quantized else weight_tensor.detach()
+                    
+                    if weight_tensor.shape == original_param.shape:
+                        processed_params.append(weight_tensor)
+                        matched = True
+                        break 
+
+            if hasattr(module, 'bias') and module.bias is not None:
+                bias = module.bias
+                bias_tensor = bias() if callable(bias) else bias
+
+                if isinstance(bias_tensor, torch.Tensor):
+                    bias_tensor = bias_tensor.detach()
+                   
+                    if bias_tensor.shape == original_param.shape:
+                        processed_params.append(bias_tensor)
+                        matched = True
+                        break 
+
+        if not matched:
+            print(f"Warning: No matching parameter found for shape {original_param.shape}")
+    
+    return processed_params
 
 def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, local_batch_size, lr, dataset, shuffle=False,
                              attacked_clients=None, attack_iterations=1000, reconstruction_loss='cosine_sim', priors=None,
@@ -587,7 +636,7 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
 
     timer = Timer(n_global_epochs)
     
-    Normal_flag= False
+    Normal_flag= True
     
     defense_flag= False
     noise_scale=0.1
@@ -595,7 +644,7 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
     fairness_flag= False
     senstive_attr=8 # 8: Sex and 9: Race
     
-    defense_fairness_flag= True
+    defense_fairness_flag= False
 
     attack_bool= True
     
@@ -618,6 +667,8 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
 
         # create the current client net copies
         client_nets = [copy.deepcopy(net) for _ in range(n_clients)]
+        client_nets = [prepare_qat_model(client_net) for client_net in client_nets]
+
 
         # iterate through each client (this should be done in parallel in theory)
         for client, (client_X, client_y, client_net) in enumerate(zip(Xtrain_splits, ytrain_splits, client_nets)):
@@ -647,6 +698,9 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                                 param -= lr * param_grad
 
                     client_net.eval()
+                    quantized_net = torch.quantization.convert(client_net.eval(), inplace=False)
+                    quantized_net.eval()
+
                     with torch.no_grad():
                         val_running_loss = 0.0
                         val_correct = 0
@@ -660,7 +714,7 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                             val_batch_X = inputs[b * local_batch_size:min(int(inputs.size()[0]), (b + 1) * local_batch_size)].clone().detach()
                             val_batch_y = labels[b * local_batch_size:min(int(labels.size()[0]), (b + 1) * local_batch_size)].clone().detach()
 
-                            outputs = client_net(val_batch_X)
+                            outputs = quantized_net(val_batch_X)
                             val_loss = criterion(outputs, val_batch_y)
                             val_running_loss += val_loss.item()
 
@@ -674,8 +728,9 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                         print("val_accuracy and val_epoch_loss: ", val_accuracy,val_epoch_loss )
                         client_net.train()
 
-                model_path = f"50_clients_data/clients_trained_model/{state_name}.pth"
-                torch.save(client_net.state_dict(), model_path)
+                model_path = f"50_clients_data/clients_trained_model/quantized_{state_name}.pth"
+                torch.save(quantized_net.state_dict(), model_path)
+                print("Quantized Model Size:", os.path.getsize(model_path) / 1024, "KB")
 
             elif defense_flag is True:
                 print("DP called")
@@ -719,7 +774,10 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                         # X_test, y_test = dataset.get_Xtest(), dataset.get_ytest()                                    
                         # acc, bac = get_acc_and_bac(client_net, X_test, y_test)
 
+
                         client_net.eval()
+                        quantized_net = torch.quantization.convert(client_net.eval(), inplace=False)
+                        quantized_net.eval()
                         with torch.no_grad():
                             val_running_loss = 0.0
                             val_correct = 0
@@ -732,7 +790,7 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                                 val_batch_X = inputs[b * local_batch_size:min(int(inputs.size()[0]), (b + 1) * local_batch_size)].clone().detach()
                                 val_batch_y = labels[b * local_batch_size:min(int(labels.size()[0]), (b + 1) * local_batch_size)].clone().detach()
 
-                                outputs = client_net(val_batch_X)
+                                outputs = quantized_net(val_batch_X)
                                 val_loss = criterion(outputs, val_batch_y)
                                 val_running_loss += val_loss.item()
 
@@ -746,8 +804,10 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                             print("val_accuracy and val_epoch_loss: ", val_accuracy,val_epoch_loss )
                             client_net.train()
 
-                model_path = f"50_clients_data/client_DP_trained_model/{state_name}.pth"
-                torch.save(client_net.state_dict(), model_path)
+                model_path = f"50_clients_data/client_DP_trained_model/quantized_{state_name}.pth"
+                # torch.save(client_net.state_dict(), model_path)
+                torch.save(quantized_net.state_dict(), model_path)
+                print("Quantized Model Size:", os.path.getsize(model_path) / 1024, "KB")
 
             elif fairness_flag is True:
                 
@@ -897,7 +957,12 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
 
             
         # extract the parameters from the client nets
-        clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
+        # clients_params = [[param.clone().detach() for param in client_net.parameters()] for client_net in client_nets]
+
+        processed_params=collect_quant_params(net, quantized_net)
+
+        clients_params = processed_params
+
 
         # c1_model="/home/chiragpandav/chirag/tableak_FT/50_clients_data/clients_trained_model/AL.pth"
         # # client_model="/home/chiragpandav/chirag/tableak_FT/50_clients_data/client_DP_trained_model/AL.pth"
@@ -931,7 +996,8 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
             per_client_best_scores = [None for _ in range(len(attacked_clients))]
             per_client_ground_truth_data = [Xtrain_splits[attacked_client].detach().clone() for attacked_client in attacked_clients]
             per_client_ground_truth_labels = [ytrain_splits[attacked_client].detach().clone() for attacked_client in attacked_clients]
-            attacked_clients_params = [[param.clone().detach() for param in clients_params[attacked_client]] for attacked_client in attacked_clients]
+            attacked_clients_params=[clients_params]
+            # attacked_clients_params = [[param.clone().detach() for param in clients_params[attacked_client]] for attacked_client in attacked_clients]
 
             for _ in range(post_selection):
 
@@ -1020,12 +1086,12 @@ def train_and_attack_fed_avg(net, n_clients, n_global_epochs, n_local_epochs, lo
                 transposed_clients_params[i].append(param.clone().detach())
 
         # aggregate the params using mean aggregation
-        aggregated_params = [torch.mean(torch.stack(params_over_clients), dim=0) for params_over_clients in transposed_clients_params]
+        # aggregated_params = [torch.mean(torch.stack(params_over_clients), dim=0) for params_over_clients in transposed_clients_params]
 
-        # write the new parameters into the main network
-        with torch.no_grad():
-            for param, agg_param in zip(net.parameters(), aggregated_params):
-                param.copy_(agg_param)
+        # # write the new parameters into the main network
+        # with torch.no_grad():
+        #     for param, agg_param in zip(net.parameters(), aggregated_params):
+        #         param.copy_(agg_param)
         
         timer.end()
     timer.duration()

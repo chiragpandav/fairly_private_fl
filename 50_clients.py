@@ -2,18 +2,18 @@ import subprocess
 import sys
 import os
 
-# state_codes = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
-#                "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
-#                "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
-#                "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
-#                "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
+state_codes = ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+               "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+               "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+               "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
+               "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"]
 
 
 # state_name = ["AK","AZ","AR","CA", "ID","NH","NM","NY"]
 
 # state_codes =["AK","AZ","AR","CA", "ID","NH","NM","NY"]
-state_codes =["NM","CA"]
-print("Inversion")
+state_codes =["CA"]
+
 count=0
 for state_code in state_codes:
     # if count==2:
